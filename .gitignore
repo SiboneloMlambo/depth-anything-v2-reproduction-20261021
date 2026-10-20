@@ -1,0 +1,25 @@
+# Official repos: re-cloned at pinned commits by scripts/setup_external.sh
+external/
+
+# Large downloads: re-fetched and hash-checked by src/download.py
+checkpoints/*
+!checkpoints/.gitkeep
+data/*
+!data/README.md
+
+# results/ IS committed (small JSON/Markdown/PNG) so every number in the
+# write-up traces to a file. Commit manifests/ too after the first run.
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/

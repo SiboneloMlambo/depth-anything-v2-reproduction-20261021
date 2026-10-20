@@ -1,0 +1,13 @@
+# Conda environment for the reproduction:  conda env create -f environment.yml
+# Versions are pinned. After the first full run, check them against what was
+# actually used (`conda env export --no-builds`) and update this file if
+# anything differs -- the brief asks for what you actually used.
+name: da2-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip=24.0
+  - git
+  - pip:
+      - -r requirements.txt

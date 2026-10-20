@@ -1,0 +1,10 @@
+# Pinned dependencies (also used directly by pip on Colab).
+# torch/torchvision: the default Linux wheels include CUDA 12.1 (works on a Colab T4).
+torch==2.3.1
+torchvision==0.18.1
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+huggingface_hub==0.23.4
+matplotlib==3.8.4
+tqdm==4.66.4
+pytest==8.2.2
