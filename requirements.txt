@@ -1,11 +1,13 @@
-# Pinned dependencies for the off-Colab environment (installed via environment.yml).
-# torch/torchvision: the default Linux wheels include CUDA 12.1. These pins need Python <= 3.12
-# (environment.yml uses 3.11); on Colab the notebook uses the preinstalled packages instead.
-torch==2.3.1
-torchvision==0.18.1
-numpy==1.26.4
-opencv-python-headless==4.10.0.84
-huggingface_hub==0.23.4
-matplotlib==3.8.4
+# Pinned to the versions the reported results were produced with
+# (Google Colab, 20 October 2026; recorded in results/colab_environment.txt).
+# torch/torchvision: Colab used the CUDA 13.0 builds (2.11.0+cu130 / 0.26.0+cu130).
+# opencv: Colab reported cv2 4.14.0; the build suffix was not recorded, hence the wildcard.
+# tqdm and pytest versions were not recorded on Colab; these are the original pins.
+torch==2.11.0
+torchvision==0.26.0
+numpy==2.1.3
+opencv-python-headless==4.14.0.*
+huggingface_hub==1.33.0
+matplotlib==3.10.0
 tqdm==4.66.4
 pytest==8.2.2

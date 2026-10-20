@@ -74,16 +74,18 @@ bash reproduce.sh
 Any stage with outputs already on disk is skipped, so after a Colab disconnect
 you just run it again. `FORCE=1 bash reproduce.sh` re-runs both tracks. Free
 Colab T4: open `notebooks/colab_reproduction.ipynb` and run its cells. It
-installs the same pinned versions with pip and calls `bash reproduce.sh`.
+uses Colab's preinstalled packages, records their versions in
+`results/colab_environment.txt`, and calls `bash reproduce.sh`. The reported
+results were produced this way, and `environment.yml` / `requirements.txt`
+pin those same versions.
 
-**First run only:** `src/download.py` records the SHA256 of each checkpoint
-and archive in `manifests/SHA256SUMS`. Commit that file, `manifests/sources.json`
-and `results/`. Every later run then verifies against the committed hashes.
+The SHA256 of each checkpoint and archive is committed in `manifests/SHA256SUMS`,
+so every run verifies its downloads against the ones used for the reported results.
 
 Quick check without a GPU, checkpoints or data:
 
 ```bash
-pytest tests/ -v      # 32 tests, including an end-to-end dry run with fake models
+pytest tests/ -v      # 35 tests, including an end-to-end dry run with fake models
 ```
 
 ## Outputs
@@ -103,9 +105,9 @@ pytest tests/ -v      # 32 tests, including an end-to-end dry run with fake mode
 ```
 reproduce.sh              the single documented command
 environment.yml           conda environment (pins come from requirements.txt)
-requirements.txt          pinned package versions
+requirements.txt          package versions used for the reported results
 scripts/setup_external.sh clones the official repos at pinned commits
-manifests/                SHA256SUMS and download sources (created by the first run; commit them)
+manifests/                SHA256SUMS and download sources for the reported results
 src/
   model_loader.py         the only use of the authors' code: strict per-release loading + inference
   alignment.py            disparity-space scale-and-shift alignment (depth-space kept for sensitivity)
@@ -127,14 +129,13 @@ run_log.md                every guess, bug, failure and deviation
 
 ## Status (20 October 2026)
 
-- [x] Evaluation code written and tested offline (32 tests, including the dry run).
+- [x] Evaluation code written and tested offline (35 tests, including the dry run).
 - [x] Two bugs found in code review before any real run and fixed (see `run_log.md`): depth-space DIODE alignment, and V1 failing to build outside its own repository.
 - [x] Decision-rule code corrected to match the proposal's wording.
-- [ ] First run on Colab: checkpoints load strictly, hashes recorded and committed.
+- [x] First run on Colab (20 October 2026): checkpoints load strictly, hashes recorded and committed. The first attempt stopped on a DA-2K file-name bug, now fixed (see `run_log.md`).
+- [x] Smoke test passed on real data (`results/smoke/smoke_report.json`).
+- [x] Full DIODE (771 frames) and DA-2K (2,068 pairs) runs; decision rule applied: **strong reproduction** (`results/final_verdict.json`).
 - [ ] DA-2K licence confirmed by reading the dataset card directly (`data/README.md`).
-- [ ] Smoke test passed on real data.
-- [ ] Full DIODE and DA-2K runs; decision rule applied.
+- [ ] DIODE protocol: absolute AbsRel is about 3x the paper's, almost all from outdoor frames. Check how Table 2 evaluated DIODE (indoor-only? depth cap?) and re-run Track A under that protocol. If it is indoor-only, the rule gives partial reproduction (indoor ΔAbsRel = −0.013).
 
-The proposal's 22 September milestone (checkpoints verified, smoke tests
-passed, preliminary table) has **not** been met yet. The boxes above say
-where things actually stand.
+The proposal's 22 September milestone was met late, on 20 October.

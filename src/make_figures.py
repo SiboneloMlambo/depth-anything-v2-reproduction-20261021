@@ -75,7 +75,8 @@ def fig_headline(da2k, diode, out: Path):
         ax.text(max(point, ci[1]) + pad, i, f"{point:+.1f} pp", va="center", color=INK, fontsize=9)
     ax.axvline(0, color=MUTED, linewidth=1)
     ax.axvline(5, color=MUTED, linewidth=1, linestyle="--")
-    ax.text(5, 1.0, " 5 pp DA-2K threshold", color=MUTED, fontsize=8, va="bottom",
+    # Label sits inside the axes at the bottom so it never collides with the title.
+    ax.text(5, 0.02, " 5 pp DA-2K threshold", color=MUTED, fontsize=8, va="bottom", ha="left",
             transform=ax.get_xaxis_transform())
     ax.set_yticks(range(len(rows)), [r[0] for r in rows])
     ax.invert_yaxis()
