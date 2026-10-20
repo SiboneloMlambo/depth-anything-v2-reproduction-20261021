@@ -104,11 +104,53 @@ def download_checkpoints(root: Path, manifest: Manifest, sources: dict):
         manifest.verify_or_record(rel, target)
 
 
+def zip_member_name(info: zipfile.ZipInfo) -> str:
+    """The real file name of a zip entry.
+
+    Entries without the zip "UTF-8" flag (bit 11) are decoded by Python as
+    cp437, which garbles non-ASCII names. DA-2K.zip has such an entry
+    (a file name containing Chinese characters, written by a tool that stored
+    UTF-8 or GBK bytes without setting the flag), so its image landed on disk
+    under a garbled name and the annotation key could not find it. Recover
+    the original bytes and decode them as UTF-8, then GBK.
+    """
+    if info.flag_bits & 0x800:
+        return info.filename
+    try:
+        raw = info.filename.encode("cp437")
+    except UnicodeEncodeError:
+        return info.filename
+    for encoding in ("utf-8", "gbk"):
+        try:
+            return raw.decode(encoding)
+        except UnicodeDecodeError:
+            pass
+    return info.filename
+
+
+def extract_zip(archive: Path, dest: Path) -> None:
+    """extractall, but with non-ASCII entry names decoded correctly."""
+    with zipfile.ZipFile(archive) as z:
+        for info in z.infolist():
+            info.filename = zip_member_name(info)
+            z.extract(info, dest)
+
+
+def _da2k_images_missing(target: Path) -> list[str]:
+    raw = json.loads((target / "annotations.json").read_text(encoding="utf-8"))
+    return sorted(k for k in raw if not (target / k).is_file())
+
+
 def download_da2k(root: Path, manifest: Manifest, sources: dict):
     target = root / "data" / "da2k"
     if (target / "annotations.json").is_file():
-        print("[download] DA-2K already present; skipping")
-        return
+        missing = _da2k_images_missing(target)
+        if not missing:
+            print("[download] DA-2K already present; skipping")
+            return
+        print(f"[download] DA-2K present but {len(missing)} annotated images missing "
+              f"(first: {missing[:3]}); re-extracting")
+        shutil.rmtree(target)
     archive = _hf_download(DA2K)
     manifest.verify_or_record("DA-2K.zip", archive)
     sources["DA-2K.zip"] = {**DA2K, "revision": _hf_revision(DA2K), "downloaded": date.today().isoformat()}
@@ -116,8 +158,7 @@ def download_da2k(root: Path, manifest: Manifest, sources: dict):
     staging = root / "data" / "_da2k_staging"
     shutil.rmtree(staging, ignore_errors=True)
     staging.mkdir(parents=True)
-    with zipfile.ZipFile(archive) as z:
-        z.extractall(staging)
+    extract_zip(archive, staging)
     found = list(staging.rglob("annotations.json"))
     if len(found) != 1:
         raise SystemExit(f"Expected one annotations.json in DA-2K.zip, found {len(found)}")
@@ -129,6 +170,9 @@ def download_da2k(root: Path, manifest: Manifest, sources: dict):
         else:
             shutil.copy2(item, dest)
     shutil.rmtree(staging)
+    missing = _da2k_images_missing(target)
+    if missing:
+        raise SystemExit(f"{len(missing)} annotated DA-2K images missing after extraction (first: {missing[:3]})")
     print(f"[download] DA-2K ready in {target}")
 
 

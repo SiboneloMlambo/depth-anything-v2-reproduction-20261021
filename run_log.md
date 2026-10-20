@@ -99,3 +99,25 @@ Official code pinned in `scripts/setup_external.sh`: V1 `1d03336771fe…`, V2 `a
 - Final verdict (`results/final_verdict.json`):
 
 ## What didn't reproduce (fill in last; this should be most of the write-up)
+
+## 2026-10-20: first Colab run (stopped at the smoke test)
+
+1. **Pinned packages could not be installed on Colab.** Colab's runtime is on
+   Python 3.13, and `torch==2.3.1` (also `numpy==1.26.4` and
+   `matplotlib==3.8.4`) has no wheel for it. pip installed nothing, so the run
+   used Colab's preinstalled packages. All 32 unit tests passed on them. The
+   Colab notebook now uses those packages on purpose and records their exact
+   versions in `results/colab_environment.txt`. `environment.yml` stays the
+   pinned off-Colab environment. **Deviation:** Colab results come from the
+   versions in that file, not from the pins.
+2. **One DA-2K image was lost when extracting the zip.**
+   `images/transparent_reflective/51685585792_a553d5930b_h的副本.jpg` is
+   stored in DA-2K.zip without the zip UTF-8 flag. Python decoded the name
+   as cp437 and wrote a garbled file name, so the annotation key did not
+   match and the run stopped (1 of 1033 images missing). This was a
+   problem in our extraction step, not in the dataset. `src/download.py`
+   now decodes such names as UTF-8, falling back to GBK. It re-extracts
+   if an earlier extraction left any annotated image missing, and it
+   checks after extraction that every annotated image is present.
+   Regression tests are in `tests/test_download.py`. No images were
+   dropped and the image count is unchanged (1033).

@@ -1,5 +1,6 @@
-# Pinned dependencies (also used directly by pip on Colab).
-# torch/torchvision: the default Linux wheels include CUDA 12.1 (works on a Colab T4).
+# Pinned dependencies for the off-Colab environment (installed via environment.yml).
+# torch/torchvision: the default Linux wheels include CUDA 12.1. These pins need Python <= 3.12
+# (environment.yml uses 3.11); on Colab the notebook uses the preinstalled packages instead.
 torch==2.3.1
 torchvision==0.18.1
 numpy==1.26.4
