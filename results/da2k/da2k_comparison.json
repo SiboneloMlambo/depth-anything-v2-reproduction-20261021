@@ -1,0 +1,267 @@
+{
+  "protocol": {
+    "higher_is_closer": true,
+    "input_size": 518,
+    "tie_rule": "exact ties count as incorrect",
+    "smoke_test": false,
+    "n_images_in_annotations": 1033
+  },
+  "v1s": {
+    "n_pairs": 2068,
+    "n_images": 1033,
+    "n_ties": 1,
+    "overall": {
+      "n_images": 1033,
+      "n_pairs": 2068,
+      "accuracy": 0.8849129593810445,
+      "accuracy_ci95": [
+        0.8692303102625298,
+        0.8999507442706063
+      ]
+    },
+    "indoor": {
+      "n_images": 195,
+      "n_pairs": 420,
+      "accuracy": 0.8476190476190476,
+      "accuracy_ci95": [
+        0.8085589711534296,
+        0.8835628640223864
+      ]
+    },
+    "outdoor": {
+      "n_images": 155,
+      "n_pairs": 344,
+      "accuracy": 0.8808139534883721,
+      "accuracy_ci95": [
+        0.8422544034643831,
+        0.9166728486646883
+      ]
+    },
+    "non_real": {
+      "n_images": 163,
+      "n_pairs": 303,
+      "accuracy": 0.9438943894389439,
+      "accuracy_ci95": [
+        0.9141843157825716,
+        0.9703971635030199
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 117,
+      "n_pairs": 214,
+      "accuracy": 0.7242990654205608,
+      "accuracy_ci95": [
+        0.6517321648637546,
+        0.7885509089780977
+      ]
+    },
+    "adverse_style": {
+      "n_images": 151,
+      "n_pairs": 328,
+      "accuracy": 0.9115853658536586,
+      "accuracy_ci95": [
+        0.8785898792934345,
+        0.9426996480721409
+      ]
+    },
+    "aerial": {
+      "n_images": 89,
+      "n_pairs": 194,
+      "accuracy": 0.9381443298969072,
+      "accuracy_ci95": [
+        0.9014778325123153,
+        0.9696969696969697
+      ]
+    },
+    "underwater": {
+      "n_images": 67,
+      "n_pairs": 117,
+      "accuracy": 0.9829059829059829,
+      "accuracy_ci95": [
+        0.9568965517241379,
+        1.0
+      ]
+    },
+    "object": {
+      "n_images": 96,
+      "n_pairs": 148,
+      "accuracy": 0.9054054054054054,
+      "accuracy_ci95": [
+        0.8534989384288748,
+        0.9492753623188406
+      ]
+    }
+  },
+  "v2s": {
+    "n_pairs": 2068,
+    "n_images": 1033,
+    "n_ties": 1,
+    "overall": {
+      "n_images": 1033,
+      "n_pairs": 2068,
+      "accuracy": 0.9516441005802708,
+      "accuracy_ci95": [
+        0.9415385333721641,
+        0.9609308023450752
+      ]
+    },
+    "indoor": {
+      "n_images": 195,
+      "n_pairs": 420,
+      "accuracy": 0.9261904761904762,
+      "accuracy_ci95": [
+        0.897307657153303,
+        0.9523837801153715
+      ]
+    },
+    "outdoor": {
+      "n_images": 155,
+      "n_pairs": 344,
+      "accuracy": 0.9302325581395349,
+      "accuracy_ci95": [
+        0.9022972452321325,
+        0.9556245745405038
+      ]
+    },
+    "non_real": {
+      "n_images": 163,
+      "n_pairs": 303,
+      "accuracy": 0.9834983498349835,
+      "accuracy_ci95": [
+        0.9684534285239913,
+        0.9966332790997221
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 117,
+      "n_pairs": 214,
+      "accuracy": 0.9439252336448598,
+      "accuracy_ci95": [
+        0.9095238095238095,
+        0.9732142857142857
+      ]
+    },
+    "adverse_style": {
+      "n_images": 151,
+      "n_pairs": 328,
+      "accuracy": 0.9512195121951219,
+      "accuracy_ci95": [
+        0.9259144237405107,
+        0.972972972972973
+      ]
+    },
+    "aerial": {
+      "n_images": 89,
+      "n_pairs": 194,
+      "accuracy": 0.9639175257731959,
+      "accuracy_ci95": [
+        0.9319282171397079,
+        0.98989898989899
+      ]
+    },
+    "underwater": {
+      "n_images": 67,
+      "n_pairs": 117,
+      "accuracy": 0.9914529914529915,
+      "accuracy_ci95": [
+        0.9724706931702345,
+        1.0
+      ]
+    },
+    "object": {
+      "n_images": 96,
+      "n_pairs": 148,
+      "accuracy": 0.972972972972973,
+      "accuracy_ci95": [
+        0.9444444444444444,
+        0.9935897435897436
+      ]
+    }
+  },
+  "v2_minus_v1": {
+    "overall": {
+      "n_images": 1033,
+      "n_pairs": 2068,
+      "gain_pp": 6.673114119922631,
+      "gain_pp_ci95": [
+        5.2912038930041945,
+        8.152451197870452
+      ]
+    },
+    "indoor": {
+      "n_images": 195,
+      "n_pairs": 420,
+      "gain_pp": 7.857142857142857,
+      "gain_pp_ci95": [
+        4.166158536585367,
+        11.723204639163889
+      ]
+    },
+    "outdoor": {
+      "n_images": 155,
+      "n_pairs": 344,
+      "gain_pp": 4.941860465116279,
+      "gain_pp_ci95": [
+        1.470480420907366,
+        8.611350574712642
+      ]
+    },
+    "non_real": {
+      "n_images": 163,
+      "n_pairs": 303,
+      "gain_pp": 3.9603960396039604,
+      "gain_pp_ci95": [
+        1.6392103289403197,
+        6.601782804862758
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 117,
+      "n_pairs": 214,
+      "gain_pp": 21.962616822429908,
+      "gain_pp_ci95": [
+        15.452797202797205,
+        29.224282760403202
+      ]
+    },
+    "adverse_style": {
+      "n_images": 151,
+      "n_pairs": 328,
+      "gain_pp": 3.9634146341463414,
+      "gain_pp_ci95": [
+        1.125429092469435,
+        6.928019649576221
+      ]
+    },
+    "aerial": {
+      "n_images": 89,
+      "n_pairs": 194,
+      "gain_pp": 2.5773195876288657,
+      "gain_pp_ci95": [
+        -1.0869565217391304,
+        5.911396260395147
+      ]
+    },
+    "underwater": {
+      "n_images": 67,
+      "n_pairs": 117,
+      "gain_pp": 0.8547008547008548,
+      "gain_pp_ci95": [
+        0.0,
+        2.608695652173913
+      ]
+    },
+    "object": {
+      "n_images": 96,
+      "n_pairs": 148,
+      "gain_pp": 6.756756756756757,
+      "gain_pp_ci95": [
+        2.7586206896551726,
+        11.349064686562894
+      ]
+    }
+  },
+  "v1s_accuracy": 0.8849129593810445,
+  "v2s_accuracy": 0.9516441005802708,
+  "delta_da2k_pp": 6.673114119922631
+}

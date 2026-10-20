@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "v1s_forward_pass": {
+      "loaded_strict": true,
+      "finite_and_shaped": true,
+      "pred_shape": [
+        1362,
+        2048
+      ],
+      "image_shape": [
+        1362,
+        2048
+      ],
+      "pred_range": [
+        0.02639591135084629,
+        41.961551666259766
+      ]
+    },
+    "v2s_forward_pass": {
+      "loaded_strict": true,
+      "finite_and_shaped": true,
+      "pred_shape": [
+        1362,
+        2048
+      ],
+      "image_shape": [
+        1362,
+        2048
+      ],
+      "pred_range": [
+        0.0,
+        14.28798770904541
+      ]
+    },
+    "v1s_sign_convention_accuracy": 0.9,
+    "v2s_sign_convention_accuracy": 0.975,
+    "v1s_diode_smoke_abs_rel": 0.22765804504011006,
+    "v1s_diode_smoke_clipped_fraction": 0.0,
+    "v2s_diode_smoke_abs_rel": 0.21292767584808678,
+    "v2s_diode_smoke_clipped_fraction": 0.0
+  },
+  "passed": true,
+  "failures": []
+}

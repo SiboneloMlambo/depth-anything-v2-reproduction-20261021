@@ -1,0 +1,181 @@
+{
+  "protocol": {
+    "alignment": "least-squares scale+shift in disparity space, then 1/disp",
+    "max_depth_floor_m": 350.0,
+    "input_size": 518,
+    "n_frames_found": 771,
+    "smoke_test": false
+  },
+  "skipped_or_modified": {
+    "v1s": [],
+    "v2s": []
+  },
+  "v1s": {
+    "indoors": {
+      "n_images": 325,
+      "abs_rel_mean": 0.09348927151852189,
+      "abs_rel_ci95": [
+        0.06882699937846183,
+        0.127105642588511
+      ],
+      "delta1_mean": 0.9413185848271678,
+      "delta1_ci95": [
+        0.9315678162123857,
+        0.9501575773731814
+      ],
+      "clipped_px_fraction": 0.0003525357180830671,
+      "sensitivity_depth_space_fit": {
+        "n_images": 325,
+        "abs_rel_mean": 0.12529087416901574,
+        "delta1_mean": 0.8483793505227109,
+        "nonpositive_px_fraction": 0.010237328981988654
+      }
+    },
+    "outdoor": {
+      "n_images": 446,
+      "abs_rel_mean": 0.35336450973750044,
+      "abs_rel_ci95": [
+        0.3235865865034588,
+        0.3871159704439805
+      ],
+      "delta1_mean": 0.6025255001598255,
+      "delta1_ci95": [
+        0.5743693812183035,
+        0.6285835868321079
+      ],
+      "clipped_px_fraction": 0.0008720634550959076,
+      "sensitivity_depth_space_fit": {
+        "n_images": 446,
+        "abs_rel_mean": 0.5721148451948221,
+        "delta1_mean": 0.5556284921574797,
+        "nonpositive_px_fraction": 0.032365831185382825
+      }
+    },
+    "combined": {
+      "n_images": 771,
+      "abs_rel_mean": 0.24381917585790508,
+      "abs_rel_ci95": [
+        0.22135023611003823,
+        0.2676121510279728
+      ],
+      "delta1_mean": 0.7453371117251774,
+      "delta1_ci95": [
+        0.72576364066122,
+        0.7650804811811254
+      ],
+      "clipped_px_fraction": 0.0006229926178428179,
+      "sensitivity_depth_space_fit": {
+        "n_images": 771,
+        "abs_rel_mean": 0.3837649222591709,
+        "delta1_mean": 0.6790319019742114,
+        "nonpositive_px_fraction": 0.021757033659679195
+      }
+    }
+  },
+  "v2s": {
+    "indoors": {
+      "n_images": 325,
+      "abs_rel_mean": 0.0804738733080475,
+      "abs_rel_ci95": [
+        0.0653683476743834,
+        0.10402814253923603
+      ],
+      "delta1_mean": 0.9426255147603934,
+      "delta1_ci95": [
+        0.9325955490871962,
+        0.9512087293309407
+      ],
+      "clipped_px_fraction": 0.00015975163969322485,
+      "sensitivity_depth_space_fit": {
+        "n_images": 325,
+        "abs_rel_mean": 0.12377999765114689,
+        "delta1_mean": 0.8493176300897778,
+        "nonpositive_px_fraction": 0.010240771343092358
+      }
+    },
+    "outdoor": {
+      "n_images": 446,
+      "abs_rel_mean": 0.3739427637769386,
+      "abs_rel_ci95": [
+        0.34069477316910807,
+        0.4127385580694534
+      ],
+      "delta1_mean": 0.5997034981535001,
+      "delta1_ci95": [
+        0.5709631584278568,
+        0.6261881205997641
+      ],
+      "clipped_px_fraction": 0.001107605283302752,
+      "sensitivity_depth_space_fit": {
+        "n_images": 446,
+        "abs_rel_mean": 0.5810345944908563,
+        "delta1_mean": 0.5483884298596279,
+        "nonpositive_px_fraction": 0.032749096666242546
+      }
+    },
+    "combined": {
+      "n_images": 771,
+      "abs_rel_mean": 0.2502366815429702,
+      "abs_rel_ci95": [
+        0.22664261078094078,
+        0.27622595126954663
+      ],
+      "delta1_mean": 0.7442555803807898,
+      "delta1_ci95": [
+        0.723897766160412,
+        0.7637862249711278
+      ],
+      "clipped_px_fraction": 0.0006531873883802682,
+      "sensitivity_depth_space_fit": {
+        "n_images": 771,
+        "abs_rel_mean": 0.3882878448502524,
+        "delta1_mean": 0.6752392600474343,
+        "nonpositive_px_fraction": 0.021958205181533658
+      }
+    }
+  },
+  "v2_minus_v1": {
+    "n_unpaired_dropped": 0,
+    "indoors": {
+      "n_images": 325,
+      "delta_abs_rel": -0.013015398210474372,
+      "delta_abs_rel_ci95": [
+        -0.03361440904027808,
+        0.0009377815288379264
+      ],
+      "delta_delta1": 0.0013069299332254605,
+      "delta_delta1_ci95": [
+        -0.003127882592138837,
+        0.0064986844559904045
+      ]
+    },
+    "outdoor": {
+      "n_images": 446,
+      "delta_abs_rel": 0.02057825403943811,
+      "delta_abs_rel_ci95": [
+        0.003946572130582617,
+        0.04326119294149391
+      ],
+      "delta_delta1": -0.002822002006325361,
+      "delta_delta1_ci95": [
+        -0.007479735092519983,
+        0.0016960257989171407
+      ]
+    },
+    "combined": {
+      "n_images": 771,
+      "delta_abs_rel": 0.006417505685065145,
+      "delta_abs_rel_ci95": [
+        -0.00647423151348175,
+        0.02053005296297388
+      ],
+      "delta_delta1": -0.0010815313443875959,
+      "delta_delta1_ci95": [
+        -0.004568169015545162,
+        0.0022565951125174456
+      ]
+    }
+  },
+  "delta_abs_rel": 0.006417505685065145,
+  "delta_delta1": -0.0010815313443875959
+}

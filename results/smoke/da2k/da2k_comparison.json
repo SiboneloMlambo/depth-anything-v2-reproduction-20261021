@@ -1,0 +1,267 @@
+{
+  "protocol": {
+    "higher_is_closer": true,
+    "input_size": 518,
+    "tie_rule": "exact ties count as incorrect",
+    "smoke_test": true,
+    "n_images_in_annotations": 1033
+  },
+  "v1s": {
+    "n_pairs": 40,
+    "n_images": 20,
+    "n_ties": 0,
+    "overall": {
+      "n_images": 20,
+      "n_pairs": 40,
+      "accuracy": 0.9,
+      "accuracy_ci95": [
+        0.7674418604651163,
+        1.0
+      ]
+    },
+    "indoor": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "accuracy": 0.7142857142857143,
+      "accuracy_ci95": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    "outdoor": {
+      "n_images": 3,
+      "n_pairs": 8,
+      "accuracy": 0.75,
+      "accuracy_ci95": [
+        0.3333333333333333,
+        1.0
+      ]
+    },
+    "non_real": {
+      "n_images": 4,
+      "n_pairs": 6,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 1,
+      "n_pairs": 2,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "adverse_style": {
+      "n_images": 1,
+      "n_pairs": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "aerial": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "underwater": {
+      "n_images": 2,
+      "n_pairs": 5,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "object": {
+      "n_images": 3,
+      "n_pairs": 4,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "v2s": {
+    "n_pairs": 40,
+    "n_images": 20,
+    "n_ties": 0,
+    "overall": {
+      "n_images": 20,
+      "n_pairs": 40,
+      "accuracy": 0.975,
+      "accuracy_ci95": [
+        0.9230769230769231,
+        1.0
+      ]
+    },
+    "indoor": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "outdoor": {
+      "n_images": 3,
+      "n_pairs": 8,
+      "accuracy": 0.875,
+      "accuracy_ci95": [
+        0.6666666666666666,
+        1.0
+      ]
+    },
+    "non_real": {
+      "n_images": 4,
+      "n_pairs": 6,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 1,
+      "n_pairs": 2,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "adverse_style": {
+      "n_images": 1,
+      "n_pairs": 1,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "aerial": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "underwater": {
+      "n_images": 2,
+      "n_pairs": 5,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "object": {
+      "n_images": 3,
+      "n_pairs": 4,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "v2_minus_v1": {
+    "overall": {
+      "n_images": 20,
+      "n_pairs": 40,
+      "gain_pp": 7.5,
+      "gain_pp_ci95": [
+        0.0,
+        18.6046511627907
+      ]
+    },
+    "indoor": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "gain_pp": 28.57142857142857,
+      "gain_pp_ci95": [
+        0.0,
+        66.66666666666666
+      ]
+    },
+    "outdoor": {
+      "n_images": 3,
+      "n_pairs": 8,
+      "gain_pp": 12.5,
+      "gain_pp_ci95": [
+        0.0,
+        33.33333333333333
+      ]
+    },
+    "non_real": {
+      "n_images": 4,
+      "n_pairs": 6,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "transparent_reflective": {
+      "n_images": 1,
+      "n_pairs": 2,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "adverse_style": {
+      "n_images": 1,
+      "n_pairs": 1,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "aerial": {
+      "n_images": 3,
+      "n_pairs": 7,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "underwater": {
+      "n_images": 2,
+      "n_pairs": 5,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "object": {
+      "n_images": 3,
+      "n_pairs": 4,
+      "gain_pp": 0.0,
+      "gain_pp_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "v1s_accuracy": 0.9,
+  "v2s_accuracy": 0.975,
+  "delta_da2k_pp": 7.5
+}

@@ -1,0 +1,27 @@
+{
+  "checkpoints/depth_anything_v1_vits.pth": {
+    "repo_id": "LiheYoung/Depth-Anything",
+    "repo_type": "space",
+    "filename": "checkpoints/depth_anything_vits14.pth",
+    "revision": "7f1457e21e74e7aa001c88fc15da5c74598aa3fa",
+    "downloaded": "2026-10-20"
+  },
+  "checkpoints/depth_anything_v2_vits.pth": {
+    "repo_id": "depth-anything/Depth-Anything-V2-Small",
+    "repo_type": "model",
+    "filename": "depth_anything_v2_vits.pth",
+    "revision": "03876f8651c73a60fe4c2c48294e09fcb6838fcf",
+    "downloaded": "2026-10-20"
+  },
+  "DA-2K.zip": {
+    "repo_id": "depth-anything/DA-2K",
+    "repo_type": "dataset",
+    "filename": "DA-2K.zip",
+    "revision": "528f83c26f02a6a7a11c5a036dfc9ee19907ebd9",
+    "downloaded": "2026-10-20"
+  },
+  "diode/val.tar.gz": {
+    "url": "https://diode-dataset.s3.amazonaws.com/val.tar.gz",
+    "downloaded": "2026-10-20"
+  }
+}

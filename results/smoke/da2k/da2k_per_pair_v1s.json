@@ -1,0 +1,602 @@
+[
+  {
+    "image_id": "images/adverse_style/39564710751_a697f2878d_k.jpg",
+    "scene_type": "adverse_style",
+    "correct": true,
+    "point1": [
+      1116,
+      838
+    ],
+    "point2": [
+      1158,
+      733
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/15901284004_6e68c0f7e7_o.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      790,
+      1100
+    ],
+    "point2": [
+      791,
+      952
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/15901284004_6e68c0f7e7_o.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      784,
+      1102
+    ],
+    "point2": [
+      781,
+      1189
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/51281722563_ccea85deb7_k.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      530,
+      658
+    ],
+    "point2": [
+      530,
+      714
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/51281722563_ccea85deb7_k.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      495,
+      1337
+    ],
+    "point2": [
+      465,
+      1326
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/51685001743_946f5577d3_k.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      1159,
+      981
+    ],
+    "point2": [
+      1159,
+      929
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/51685001743_946f5577d3_k.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      525,
+      564
+    ],
+    "point2": [
+      502,
+      446
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/aerial/51685001743_946f5577d3_k.jpg",
+    "scene_type": "aerial",
+    "correct": true,
+    "point1": [
+      1171,
+      206
+    ],
+    "point2": [
+      1208,
+      163
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/23158459196_e3e3774a2e_b.jpg",
+    "scene_type": "indoor",
+    "correct": false,
+    "point1": [
+      468,
+      464
+    ],
+    "point2": [
+      324,
+      208
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/23158459196_e3e3774a2e_b.jpg",
+    "scene_type": "indoor",
+    "correct": false,
+    "point1": [
+      84,
+      528
+    ],
+    "point2": [
+      396,
+      528
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/23158459196_e3e3774a2e_b.jpg",
+    "scene_type": "indoor",
+    "correct": true,
+    "point1": [
+      430,
+      484
+    ],
+    "point2": [
+      430,
+      502
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/23182497646_915f1fd7d6_b.jpg",
+    "scene_type": "indoor",
+    "correct": true,
+    "point1": [
+      208,
+      560
+    ],
+    "point2": [
+      171,
+      240
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/24544161402_d5d73bfa9a_k.jpg",
+    "scene_type": "indoor",
+    "correct": true,
+    "point1": [
+      1314,
+      814
+    ],
+    "point2": [
+      1300,
+      887
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/24544161402_d5d73bfa9a_k.jpg",
+    "scene_type": "indoor",
+    "correct": true,
+    "point1": [
+      1332,
+      1218
+    ],
+    "point2": [
+      1314,
+      961
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/indoor/24544161402_d5d73bfa9a_k.jpg",
+    "scene_type": "indoor",
+    "correct": true,
+    "point1": [
+      883,
+      1279
+    ],
+    "point2": [
+      1297,
+      1171
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/27909185450_cd8bb7515a_h.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      310,
+      726
+    ],
+    "point2": [
+      233,
+      901
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/52711432455_2d53984507_k.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      820,
+      1184
+    ],
+    "point2": [
+      818,
+      1301
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/53203269527_15f57ab274_k.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      883,
+      829
+    ],
+    "point2": [
+      889,
+      758
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/53203269527_15f57ab274_k.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      516,
+      1296
+    ],
+    "point2": [
+      622,
+      953
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/53203269527_15f57ab274_k.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      913,
+      1279
+    ],
+    "point2": [
+      904,
+      1214
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/non_real/53649121897_68e5871f6e_b.jpg",
+    "scene_type": "non_real",
+    "correct": true,
+    "point1": [
+      535,
+      412
+    ],
+    "point2": [
+      671,
+      936
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/object/23834245990_e256ed4a72_k.jpg",
+    "scene_type": "object",
+    "correct": true,
+    "point1": [
+      608,
+      1245
+    ],
+    "point2": [
+      611,
+      1305
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/object/27425396986_64d53bcfaf_k.jpg",
+    "scene_type": "object",
+    "correct": true,
+    "point1": [
+      1064,
+      1432
+    ],
+    "point2": [
+      1090,
+      1569
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/object/43018722705_aa8859289e_k.jpg",
+    "scene_type": "object",
+    "correct": true,
+    "point1": [
+      676,
+      432
+    ],
+    "point2": [
+      778,
+      391
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/object/43018722705_aa8859289e_k.jpg",
+    "scene_type": "object",
+    "correct": true,
+    "point1": [
+      305,
+      218
+    ],
+    "point2": [
+      307,
+      152
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/29321669045_8a7f010fa6_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      459,
+      2016
+    ],
+    "point2": [
+      333,
+      224
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/29321669045_8a7f010fa6_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      674,
+      593
+    ],
+    "point2": [
+      712,
+      693
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/51331667474_40034a5a3d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": false,
+    "point1": [
+      1118,
+      451
+    ],
+    "point2": [
+      1104,
+      377
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/51331667474_40034a5a3d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      1784,
+      676
+    ],
+    "point2": [
+      1653,
+      789
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/51331667474_40034a5a3d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": false,
+    "point1": [
+      1628,
+      544
+    ],
+    "point2": [
+      1509,
+      1210
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/52814102169_efcb3edb2d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      669,
+      798
+    ],
+    "point2": [
+      673,
+      947
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/52814102169_efcb3edb2d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      692,
+      1155
+    ],
+    "point2": [
+      701,
+      1355
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/outdoor/52814102169_efcb3edb2d_k.jpg",
+    "scene_type": "outdoor",
+    "correct": true,
+    "point1": [
+      956,
+      48
+    ],
+    "point2": [
+      916,
+      292
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/transparent_reflective/24601128766_241ddb7c9a_h.jpg",
+    "scene_type": "transparent_reflective",
+    "correct": true,
+    "point1": [
+      606,
+      676
+    ],
+    "point2": [
+      464,
+      1090
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/transparent_reflective/24601128766_241ddb7c9a_h.jpg",
+    "scene_type": "transparent_reflective",
+    "correct": true,
+    "point1": [
+      699,
+      674
+    ],
+    "point2": [
+      455,
+      1105
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/underwater/23433401544_111a517ca0_k.jpg",
+    "scene_type": "underwater",
+    "correct": true,
+    "point1": [
+      665,
+      1171
+    ],
+    "point2": [
+      664,
+      1108
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/underwater/23433401544_111a517ca0_k.jpg",
+    "scene_type": "underwater",
+    "correct": true,
+    "point1": [
+      310,
+      1259
+    ],
+    "point2": [
+      314,
+      1155
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/underwater/23433401544_111a517ca0_k.jpg",
+    "scene_type": "underwater",
+    "correct": true,
+    "point1": [
+      913,
+      1314
+    ],
+    "point2": [
+      920,
+      1429
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/underwater/32359581291_929c5af04b_k.jpg",
+    "scene_type": "underwater",
+    "correct": true,
+    "point1": [
+      820,
+      1029
+    ],
+    "point2": [
+      877,
+      594
+    ],
+    "closer_point": "point1",
+    "tie": false
+  },
+  {
+    "image_id": "images/underwater/32359581291_929c5af04b_k.jpg",
+    "scene_type": "underwater",
+    "correct": true,
+    "point1": [
+      368,
+      1517
+    ],
+    "point2": [
+      349,
+      1301
+    ],
+    "closer_point": "point1",
+    "tie": false
+  }
+]

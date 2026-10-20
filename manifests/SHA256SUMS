@@ -1,0 +1,5 @@
+# sha256  name   (first recorded by src/download.py; commit this file)
+59afe57cfd9f4284deaf5b753d954723d7136ae842fba3e068ba03537ca1e60e  checkpoints/depth_anything_v1_vits.pth
+715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378  checkpoints/depth_anything_v2_vits.pth
+ff0e48e7cc53273efd1312610e51f1ec87bea0b8a22daf37125fd81246592b81  DA-2K.zip
+8e847e0923c57c221533c0040a49fc37a547af08f0a78ab235fdbf91dc362374  diode/val.tar.gz

@@ -1,0 +1,26 @@
+{
+  "verdict": "strong reproduction",
+  "reason": "All three magnitude thresholds met. da2k_pass=True (gain +6.67 pp vs >= 5.0), abs_rel_pass=True (|dAbsRel|=0.0064 vs <= 0.01), delta1_pass=True (|d-delta1|=0.0011 vs <= 0.02), direction_ok=True (DA-2K gain +0.0667 vs delta1 change -0.0011)",
+  "inputs": {
+    "delta_da2k_pp": 6.673114119922631,
+    "delta_abs_rel": 0.006417505685065145,
+    "delta_delta1": -0.0010815313443875959,
+    "da2k_threshold_pp": 5.0,
+    "abs_rel_threshold": 0.01,
+    "delta1_threshold": 0.02
+  },
+  "uncertainty_not_used_by_rule": {
+    "da2k_gain_pp_ci95": [
+      5.2912038930041945,
+      8.152451197870452
+    ],
+    "diode_delta_abs_rel_ci95": [
+      -0.00647423151348175,
+      0.02053005296297388
+    ],
+    "diode_delta_delta1_ci95": [
+      -0.004568169015545162,
+      0.0022565951125174456
+    ]
+  }
+}
