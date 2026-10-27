@@ -127,15 +127,3 @@ data/README.md            licence and provenance notes
 run_log.md                every guess, bug, failure and deviation
 ```
 
-## Status (20 October 2026)
-
-- [x] Evaluation code written and tested offline (35 tests, including the dry run).
-- [x] Two bugs found in code review before any real run and fixed (see `run_log.md`): depth-space DIODE alignment, and V1 failing to build outside its own repository.
-- [x] Decision-rule code corrected to match the proposal's wording.
-- [x] First run on Colab (20 October 2026): checkpoints load strictly, hashes recorded and committed. The first attempt stopped on a DA-2K file-name bug, now fixed (see `run_log.md`).
-- [x] Smoke test passed on real data (`results/smoke/smoke_report.json`).
-- [x] Full DIODE (771 frames) and DA-2K (2,068 pairs) runs; decision rule applied: **strong reproduction** (`results/final_verdict.json`).
-- [ ] DA-2K licence confirmed by reading the dataset card directly (`data/README.md`).
-- [ ] DIODE protocol: absolute AbsRel is about 3x the paper's, almost all from outdoor frames. Check how Table 2 evaluated DIODE (indoor-only? depth cap?) and re-run Track A under that protocol. If it is indoor-only, the rule gives partial reproduction (indoor ΔAbsRel = −0.013).
-
-The proposal's 22 September milestone was met late, on 20 October.
