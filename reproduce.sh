@@ -6,6 +6,12 @@
 #
 # Stages whose outputs already exist are skipped, so an interrupted run can
 # simply be restarted. FORCE=1 bash reproduce.sh re-runs both evaluation tracks.
+
+#set -euo pipefail, This makes the script fail fast instead of continuing in a broken state:
+#-e exits as soon as any command fails.
+#-u treats an undefined variable as an error, so typos dont silently become empty strings.
+#-o pipefail makes a pipeline fail if any command in it fails, not only the last one.
+
 set -euo pipefail
 cd "$(dirname "$0")"
 
