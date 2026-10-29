@@ -119,7 +119,8 @@ def infer_disparity(model, raw_image_bgr, input_size: int = 518):
 
     from torchvision.transforms import Compose
     from depth_anything.util.transform import NormalizeImage, PrepareForNet, Resize
-
+    #Change image from bgr to RGB,then use the transform to change to 518,
+    #Then use PrepareForNet to change to Transposes the array from HWC → CHW (height, width, channels → channels, height, width)
     image = cv2.cvtColor(raw_image_bgr, cv2.COLOR_BGR2RGB) / 255.0
     height, width = image.shape[:2]
     transform = Compose([
